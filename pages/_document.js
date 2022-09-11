@@ -42,13 +42,13 @@ class MyDocument extends Document {
 					<meta property="og:url" content="https://codewars-kata-fetcher.vercel.app/" />
 					<meta property="og:title" content="CodeWars Kata Fetcher" />
 					<meta property="og:description" content="A small online tool to fetch the codewars kata's information using the kata url." />
-					<meta property="og:image" content="/thumbnail.png" />
+					<meta property="og:image" content="https://codewars-kata-fetcher.vercel.app/thumbnail.png" />
 
 					<meta name="twitter:card" content="summary_large_image" />
 					<meta name="twitter:url" content="https://codewars-kata-fetcher.vercel.app/" />
 					<meta name="twitter:title" content="CodeWars Kata Fetcher" />
 					<meta name="twitter:description" content="A small online tool to fetch the codewars kata's information using the kata url." />
-					<meta name="twitter:image" content="/thumbnail.png" />
+					<meta name="twitter:image" content="https://codewars-kata-fetcher.vercel.app/thumbnail.png" />
 				</Head>
 				<body>
 					<Main />
