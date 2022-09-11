@@ -1,0 +1,62 @@
+@import "bootstrap";
+
+pre {
+	background: $light;
+	border-radius: $border-radius;
+	padding: 1rem;
+	color: tint-color($dark, 50%);
+}
+
+@each $state, $value in $theme-colors {
+	$alert-background: transparent;
+	$alert-border: $value;
+	$alert-color: $value;
+
+	.alert-#{$state} {
+		@include alert-variant($alert-background, $alert-border, $alert-color);
+	}
+}
+
+.info-table {
+	@include media-breakpoint-up("sm") {
+		th {
+			width: 15%;
+		}
+	}
+
+	@include media-breakpoint-down("sm") {
+		&,
+		& tbody,
+		& tr,
+		& td,
+		& th {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			padding: 0;
+			border-bottom-width: 0;
+		}
+
+		& tr {
+			&:not(:last-child) {
+				border-bottom-width: 1px;
+				border-color: inherit;
+				border-style: solid;
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+			}
+		}
+
+		& td,
+		& th {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.site-footer {
+	a {
+		--bs-link-color: var(--bs-body-color);
+	}
+}
