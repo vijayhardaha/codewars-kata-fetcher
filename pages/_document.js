@@ -1,5 +1,6 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -37,6 +38,10 @@ class MyDocument extends Document {
 					<meta name="theme-color" content="#ffffff" />
 
 					<meta name="title" content="CodeWars Kata Fetcher" />
+					<meta
+						name="keywords"
+						content="codewars kata fetcher, codewars, codewars api, codewars apis, codewars kata, codewars fetcher, codewars codepan, codewars kyu, kata, kyu, codewars question, codewars answer, codewars tool"
+					/>
 
 					<meta property="og:type" content="website" />
 					<meta property="og:url" content="https://codewars-kata-fetcher.vercel.app/" />
@@ -49,6 +54,19 @@ class MyDocument extends Document {
 					<meta name="twitter:title" content="CodeWars Kata Fetcher" />
 					<meta name="twitter:description" content="A small online tool to fetch the codewars kata's information using the kata url." />
 					<meta name="twitter:image" content="https://codewars-kata-fetcher.vercel.app/thumbnail.png" />
+
+					<meta name="google-site-verification" content="YMrzWpiu-ZoKVloJLdKStN_kcTwWX7vHvyVuT2KdzoU" />
+
+					<Script src="https://www.googletagmanager.com/gtag/js?id=G-Z0FF722WN9" strategy="afterInteractive" />
+					<Script id="google-analytics" strategy="afterInteractive">
+						{`
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+
+						gtag('config', 'G-Z0FF722WN9');
+						`}
+					</Script>
 				</Head>
 				<body>
 					<Main />

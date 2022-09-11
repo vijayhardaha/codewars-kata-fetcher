@@ -1,5 +1,36 @@
 /* make the customizations */
 @import "variables";
 
-/* import bootstrap to set changes */
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+// scss-docs-start import-stack
+// Configuration
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "utilities";
+
+// Layout & components
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/nav";
+
+@import "~bootstrap/scss/forms/labels";
+@import "~bootstrap/scss/forms/form-control";
+@import "~bootstrap/scss/forms/input-group";
+
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/alert";
+
+// Helpers
+@import "~bootstrap/scss/helpers";
+
+// Utilities
+@import "~bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
